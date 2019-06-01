@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export PATH="$PATH:/usr/jdk-10.0.2/bin:$(ruby -e 'print Gem.user_dir')/bin"
+
 # aliases
 alias ls='ls --color=yes --group-directories-first'
 alias la='ls -a --color=yes'
@@ -21,5 +23,4 @@ PS1='[\[$(tput setaf 30)\]\W\[$(tput setaf 7)\]]\\$ \[$(tput sgr0)\]'
 export EDITOR='vim'
 export VISUAL='vim'
 
-cd ~
 set -o vi
