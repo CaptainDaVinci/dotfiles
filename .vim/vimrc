@@ -1,0 +1,64 @@
+set nocompatible
+
+execute pathogen#infect()
+filetype indent plugin on
+syntax on
+color badwolf
+
+set background=dark
+set number
+set relativenumber
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Set undo
+set undofile
+set undodir=/home/captaindavinci/.vimundo
+
+" Searching
+set hlsearch	
+set smartcase	
+set ignorecase	
+set incsearch	
+
+" Indentation
+set autoindent	
+set shiftwidth=4
+set smartindent	
+set smarttab	
+set softtabstop=4	
+set backspace=indent,eol,start
+
+" Status line
+set laststatus=2
+set statusline=\ \   
+set statusline+=%0*\ %{mode()}
+set statusline+=\ \   
+set statusline+=%f
+set statusline+=\   
+set statusline+=%y
+set statusline+=%=
+set statusline+=%3l/%3L
+set statusline+=\ \  
+
+
+" Random 
+set hidden
+set ruler	
+set wildmenu 
+set showcmd
+set history=100
+set undolevels=1000	
+
+" Mappings
+nnoremap <leader><Space> :nohl<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+
+" Nerdtree
+autocmd vimenter * NERDTree
+autocmd vimenter * NERDTreeToggle
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+
