@@ -1,0 +1,9 @@
+URxvt.foreground:	#ffffff
+URxvt.background:	#000000
+!URxvt.font: 		xft:DejaVu Sans Mono:size=14:antialias=True
+!URxvt.fontBold: 	xft:DejaVu Sans Mono:style=Bold:size=14:antialias=True
+URxvt.font: 		xft:Inconsolata:pixelsize=18:antialias=True:minspace=False, xft:DejaVu Sans Mono:pixelsize=24:antialias=True
+URxvt.fontBold: 	xft:Inconsolata:style=Bold:pixelsize=18:antialias=True:minspace=False, xft:DejaVu Sans Mono:pixelsize=24:antialias=True
+URxvt.scrollBar: 	false
+URxvt.cursorColor: 	green
+
