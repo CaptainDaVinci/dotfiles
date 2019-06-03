@@ -192,6 +192,7 @@ exec st -n scratchpad -e python -iqc "from math import *"
 # scratchpad
 for_window [instance="scratchpad"] move window to scratchpad
 for_window [instance="music"] move window to workspace $ws10
+for_window [class=".*"] border pixel 1
 
 #custom binding
 bindsym $mod+p exec st -n music -e cmus
