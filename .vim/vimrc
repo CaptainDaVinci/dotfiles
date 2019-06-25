@@ -1,5 +1,4 @@
 set nocompatible
-
 execute pathogen#infect()
 filetype indent plugin on
 syntax on
@@ -27,6 +26,7 @@ set shiftwidth=4
 set smartindent	
 set smarttab	
 set softtabstop=4	
+set expandtab
 set backspace=indent,eol,start
 
 " Status line
@@ -53,6 +53,7 @@ set undolevels=1000
 " Mappings
 nnoremap <leader><Space> :nohl<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+inoremap { {<CR>}<ESC>O
 
 " Nerdtree
 autocmd vimenter * NERDTree
