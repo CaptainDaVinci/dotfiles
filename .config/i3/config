@@ -185,20 +185,20 @@ client.urgent           #444444 #111111 #$fgcolor #900000   #444444
 client.placeholder      #444444 #111111 #$fgcolor #000000   #444444
 client.background       #444444
 
-# startup commands
-exec --no-startup-id dunst
-exec st -n scratchpad -e python -iqc "from math import *" 
-
-# scratchpad
+# Assign workspaces
+assign [class="firefox"] $ws1
 for_window [instance="scratchpad"] move window to scratchpad
-for_window [instance="music"] move window to workspace $ws10
 for_window [class=".*"] border pixel 1
 
-#custom binding
-bindsym $mod+p exec st -n music -e cmus
+# startup commands
+exec --no-startup-id dunst
+exec --no-startup-id firefox
+exec st -n scratchpad -e python -iqc "from math import *" 
+exec --no-startup-id i3-msg 'workspace 2; append_layout /home/captaindavinci/.config/i3/startup-workspace2.json; exec st; exec st'; 
 
-bindsym $mod+shift+m exec st -n scratchpad -e python -iqc "from math import *"
-bindsym $mod+m [instance="scratchpad"] scratchpad show
-
+# custom binding
+bindsym $mod+shift+p exec st -n scratchpad -e python -iqc "from math import *"
+bindsym $mod+p [instance="scratchpad"] scratchpad show
 bindsym $mod+x exec --no-startup-id /usr/local/bin/screen-lock 
+bindsym $mod+c exec --no-startup-id i3-msg workspace 10; exec st -n music -e cmus;
 
