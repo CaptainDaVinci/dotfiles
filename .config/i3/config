@@ -192,7 +192,7 @@ for_window [class=".*"] border pixel 1
 
 # startup commands
 exec --no-startup-id dunst
-exec --no-startup-id firefox
+exec --no-startup-id google-chrome-stable
 exec st -n scratchpad -e python -iqc "from math import *" 
 exec --no-startup-id i3-msg 'workspace 2; append_layout /home/captaindavinci/.config/i3/startup-workspace2.json; exec st; exec st'; 
 

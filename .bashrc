@@ -11,7 +11,7 @@ export PATH="$PATH:/usr/jdk-10.0.2/bin:$(ruby -e 'print Gem.user_dir')/bin"
 alias ls='ls --color=yes --group-directories-first'
 alias la='ls -a --color=yes'
 alias aenv='. env/bin/activate'
-alias ff='nohup firefox 1>/dev/null 2>/dev/null &'
+alias gg='nohup google-chrome-stable 1>/dev/null 2>/dev/null &'
 alias idea='nohup idea 1>/dev/null 2>/dev/null &'
 alias qq='nohup qutebrowser 1>/dev/null 2>/dev/null &'
 alias eclipse='nohup eclipse 1>/dev/null 2>/dev/null &'
