@@ -186,7 +186,7 @@ client.placeholder      #444444 #111111 #$fgcolor #000000   #444444
 client.background       #444444
 
 # Assign workspaces
-assign [class="google-chrome"] $ws1
+assign [class="Google-chrome"] $ws1
 for_window [instance="scratchpad"] move window to scratchpad
 for_window [instance="floatterm"] move window to scratchpad
 for_window [class=".*"] border pixel 1
